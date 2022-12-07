@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1030,1342" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:uda="clr-namespace:UiPath.DataService.Activities;assembly=UiPath.DataService.Activities.Core" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:w="clr-namespace:WateringBot_Dispatcher;assembly=DataService.WateringBot_Dispatcher" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="594,1278" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:uda="clr-namespace:UiPath.DataService.Activities;assembly=UiPath.DataService.Activities.Core" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:w="clr-namespace:WateringBot_Dispatcher;assembly=DataService.WateringBot_Dispatcher" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="62">
       <x:String>System.Activities</x:String>
@@ -75,7 +75,7 @@
       <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="644,1277" sap2010:WorkflowViewState.IdRef="Sequence_3">
+  <Sequence sap:VirtualizedContainerService.HintSize="604,1213" sap2010:WorkflowViewState.IdRef="Sequence_3">
     <Sequence.Variables>
       <Variable x:TypeArguments="scg:IList(w:Plants4Lyfe)" Name="Sensors" />
     </Sequence.Variables>
@@ -84,14 +84,14 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uda:QueryEntityRecords x:TypeArguments="w:Plants4Lyfe" FilterArguments="{x:Null}" FilterValues="{x:Null}" TotalRecords="{x:Null}" ContinueOnError="False" DisplayName="Query Entity Records" ExpansionDepth="2" sap:VirtualizedContainerService.HintSize="582,231" sap2010:WorkflowViewState.IdRef="QueryEntityRecords`1_2" OutputRecords="[Sensors]" Skip="0" SortAscending="True" SortByField="Id" TimeoutInMs="30000" Top="100" />
-    <ui:ForEach x:TypeArguments="w:Plants4Lyfe" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="582,884" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[Sensors]">
+    <uda:QueryEntityRecords x:TypeArguments="w:Plants4Lyfe" FilterArguments="{x:Null}" FilterValues="{x:Null}" TotalRecords="{x:Null}" ContinueOnError="False" DisplayName="Query Entity Records" ExpansionDepth="2" sap:VirtualizedContainerService.HintSize="562,231" sap2010:WorkflowViewState.IdRef="QueryEntityRecords`1_2" OutputRecords="[Sensors]" Skip="0" SortAscending="True" SortByField="Id" TimeoutInMs="30000" Top="100" />
+    <ui:ForEach x:TypeArguments="w:Plants4Lyfe" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="562,852" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[Sensors]">
       <ui:ForEach.Body>
         <ActivityAction x:TypeArguments="w:Plants4Lyfe">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="w:Plants4Lyfe" Name="item" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="546,750" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="526,718" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="WateringMode" />
               <Variable x:TypeArguments="x:Boolean" Name="AutoWater" />
@@ -101,7 +101,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Assign sap:VirtualizedContainerService.HintSize="484,70" sap2010:WorkflowViewState.IdRef="Assign_1">
+            <Assign DisplayName="Assign " sap:VirtualizedContainerService.HintSize="484,70" sap2010:WorkflowViewState.IdRef="Assign_1">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">[WateringMode]</OutArgument>
               </Assign.To>
